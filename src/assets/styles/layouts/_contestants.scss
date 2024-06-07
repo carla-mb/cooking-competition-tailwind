@@ -1,0 +1,28 @@
+// Participants grid of cards
+.card {
+    @apply text-white text-center bg-red2-base border-2 border-light-green-base rounded-lg max-w-72 sm:max-w-64 xl:max-w-60 p-4 m-4;
+  
+    &__image {
+        @apply flex justify-center;
+    
+        img {
+            @apply w-3/4 border-2 border-light-green-base rounded-full;
+        }
+    }
+  
+    h2 {
+        @apply text-light-green-base py-2 text-xl xl:text-2xl;
+    }
+  
+    p {
+        @apply xl:text-lg;
+    }
+  
+    blockquote {
+        @apply pt-2;
+    
+        q {
+            @apply italic text-sm;
+        }
+    }
+}

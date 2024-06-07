@@ -1,0 +1,90 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
+}
+
+/* Navbar Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* Section Styles */
+section {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Recipe Cards */
+section .flex {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    section .flex {
+        flex-direction: row;
+    }
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid #d1d1d1;
+    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .footer-left {
+        width: 100%;
+        margin-bottom: 32px;
+
+        @media (min-width: 768px) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+    .footer-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+            width: 50%;
+            flex-direction: row;
+        }
+
+        .footer-column {
+            width: 100%;
+            margin-bottom: 16px;
+
+            @media (min-width: 768px) {
+                width: calc(33.333% - 16px);
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+
+    a {
+        color: #6b7280;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

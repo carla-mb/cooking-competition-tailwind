@@ -1,0 +1,33 @@
+// SHARED STILES
+
+// Layout styles
+body {
+    @apply relative box-border h-full min-h-screen p-0 m-0 font-ropa bg-main-bg;
+}
+
+// All heading styles
+.heading {
+    @apply pt-6 text-center text-fluid;
+}
+
+// Sign-up banner in "Sobre el concurso" and "Participantes"
+.sign-up {
+    @apply mx-4 sm:mx-auto text-white text-center bg-red2-base rounded-lg sm:w-2/3 lg:w-8/12 xl:max-w-screen-md p-4 m-4 xl:text-lg;
+
+    p:nth-child(2) {
+        @apply py-2;
+    }
+}
+
+.btn-primary {
+    @apply py-2 px-3 mt-2 bg-light-green-base text-black rounded-md hover:bg-light-green-light;
+}
+
+.link-primary {
+    @apply text-light-green-base hover:text-light-green-light;
+}
+
+// Footer link styles
+.footer-link {
+    @apply py-3 text-salmon-base hover:text-salmon-dark focus:text-salmon-dark;
+}

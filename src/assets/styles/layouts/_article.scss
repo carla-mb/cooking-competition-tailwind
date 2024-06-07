@@ -1,0 +1,36 @@
+// Judges grid of cards
+.judge-card {
+    @apply bg-red1-light p-6 rounded-lg shadow-lg;
+  
+    h3 {
+        @apply text-center text-xl xl:text-2xl font-semibold pb-2
+    }
+  
+    div {
+        @apply flex justify-center;
+    
+        img {
+            @apply rounded-full max-w-32 xl:max-w-40 m-auto;
+        }
+    }
+  
+    p {
+        @apply py-2 xl:text-lg;
+    }
+  
+    blockquote {
+        @apply relative w-fit p-4 mx-auto italic text-gray-500 bg-green-50 border-l-[3px] border-light-green-base rounded-r-md;
+    
+        i {
+            @apply absolute top-[-2px] left-2 text-2xl text-light-green-base;
+        }
+    
+        p {
+            @apply mb-2 ml-3 mt-2;
+        }
+    
+        cite {
+            @apply block text-right text-sm not-italic font-bold text-light-green-base;
+        }
+    }
+}
